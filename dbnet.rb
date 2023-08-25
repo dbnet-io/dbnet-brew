@@ -5,21 +5,21 @@
 class Dbnet < Formula
   desc "A database client that lets your SQL superpowers shine."
   homepage "https://github.com/dbnet-io/dbnet"
-  version "0.0.70"
+  version "0.0.73"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dbnet-io/dbnet/releases/download/v0.0.70/dbnet_darwin_arm64.tar.gz"
-      sha256 "ff0469f84c08c0dadba36f36c7ea99c52f3fa13f77cafd1e480c4bc8735a4541"
+      url "https://github.com/dbnet-io/dbnet/releases/download/v0.0.73/dbnet_darwin_arm64.tar.gz"
+      sha256 "15aad68ea2b8153eab5261b2281fa5fd7ea423c36c2ea44b93f6a9559d99f9ca"
 
       def install
         bin.install "dbnet"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dbnet-io/dbnet/releases/download/v0.0.70/dbnet_darwin_amd64.tar.gz"
-      sha256 "7ca00a2e83204edce8fb8b0054e064668dc0057c62cc764f8e05b538ebf2e153"
+      url "https://github.com/dbnet-io/dbnet/releases/download/v0.0.73/dbnet_darwin_amd64.tar.gz"
+      sha256 "6d28b6c6427e0109f7262408481cc5d6b27c6e91e8f55c79633ac1b7643a6207"
 
       def install
         bin.install "dbnet"
